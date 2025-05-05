@@ -83,3 +83,45 @@ rm -rf gh-pages
 echo "✅ DONE! Your report is live at:"
 echo "➡ https://$UserName.github.io/$Repo/index.html"
 
+#email----------------------------
+
+
+#!/bin/bash
+
+# Variables
+TO_EMAIL="abhiptl5177@gmail.com"
+FROM_NAME="QA Bot"
+FROM_EMAIL="noreply@example.com"
+SUBJECT="✅ Test Report - $(date '+%Y-%m-%d %H:%M')"
+REPORT_URL="https://$UserName.github.io/$Repo/index.html"
+
+# Build HTML body
+EMAIL_CONTENT=$(cat <<EOF
+From: ${FROM_NAME} <${FROM_EMAIL}>
+To: ${TO_EMAIL}
+Subject: ${SUBJECT}
+Content-Type: text/html
+
+<html>
+  <body style="font-family: sans-serif; color: #333;">
+    <h2>✅ Automated Test Summary</h2>
+    <ul>
+      <li><strong>Status:</strong> Completed</li>
+      <li><strong>Date:</strong> $(date)</li>
+      <li><strong>Branch:</strong> main</li>
+    </ul>
+    <p><strong>Allure Report:</strong> 
+      <a href="${REPORT_URL}" target="_blank">View Report</a>
+    </p>
+    <hr>
+    <p>This is an automated email from CI.</p>
+  </body>
+</html>
+EOF
+)
+
+# Send Email using sendmail
+echo "$EMAIL_CONTENT" | /usr/sbin/sendmail -t
+
+
+
