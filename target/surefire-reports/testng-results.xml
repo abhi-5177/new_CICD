@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-05T15:38:18 IST" name="Suite" finished-at="2025-05-05T15:38:24 IST" duration-ms="6028">
+  <suite started-at="2025-05-05T16:01:04 IST" name="Suite" finished-at="2025-05-05T16:01:28 IST" duration-ms="24593">
     <groups>
     </groups>
-    <test started-at="2025-05-05T15:38:18 IST" name="Test" finished-at="2025-05-05T15:38:24 IST" duration-ms="6028">
+    <test started-at="2025-05-05T16:01:04 IST" name="Test" finished-at="2025-05-05T16:01:28 IST" duration-ms="24593">
       <class name="new_CICD.new_test_CICD">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:new_CICD.new_test_CICD@58d75e99]" started-at="2025-05-05T15:38:18 IST" name="setUp" finished-at="2025-05-05T15:38:19 IST" duration-ms="884" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:new_CICD.new_test_CICD@58d75e99]" started-at="2025-05-05T16:01:04 IST" name="setUp" finished-at="2025-05-05T16:01:04 IST" duration-ms="887" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testGoogleSearchTitle()[pri:0, instance:new_CICD.new_test_CICD@58d75e99]" started-at="2025-05-05T15:38:19 IST" name="testGoogleSearchTitle" finished-at="2025-05-05T15:38:24 IST" duration-ms="4894" status="FAIL">
+        <test-method signature="testGoogleSearchTitle()[pri:0, instance:new_CICD.new_test_CICD@58d75e99]" started-at="2025-05-05T16:01:04 IST" name="testGoogleSearchTitle" finished-at="2025-05-05T16:01:28 IST" duration-ms="23431" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected:<Google> but was:<Google1>]]>
@@ -59,7 +59,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGoogleSearchTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:new_CICD.new_test_CICD@58d75e99]" started-at="2025-05-05T15:38:24 IST" name="tearDown" finished-at="2025-05-05T15:38:24 IST" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:new_CICD.new_test_CICD@58d75e99]" started-at="2025-05-05T16:01:28 IST" name="tearDown" finished-at="2025-05-05T16:01:28 IST" duration-ms="221" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
