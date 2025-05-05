@@ -1,5 +1,7 @@
 #!/bin/bash
-
+UserName="abhi-5177"        
+Email="abhiptl5177@gmail.com"
+Repo="new_CICD"                      
 # -----------------------
 # Initial Git Setup (only if not already initialized)
 # -----------------------
@@ -7,9 +9,9 @@ if [ ! -d ".git" ]; then
   echo "🔧 Initializing Git repository..."
   git init
   git branch -M main
-  git remote add origin https://github.com/abhi-5177/new_CICD.git
-  git config user.name "abhi-5177"
-  git config user.email "abhiptl5177@gmail.com"
+  git remote add origin https://github.com/$UserName/$Repo.git
+  git config user.name "$UserName"
+  git config user.email "$Email"
 fi
 
 # -----------------------
@@ -65,9 +67,9 @@ touch .nojekyll
 echo "🌐 Deploying to gh-pages..."
 git init
 git checkout -b gh-pages
-git remote add origin git@github.com:abhi-5177/new_CICD.git
-git config user.name "abhi-5177"
-git config user.email "abhiptl5177@gmail.com"
+git remote add origin git@github.com:$UserName/$Repo.git
+git config user.name "$UserName"
+git config user.email "$Email"
 git add .
 git commit -m "Deploy Allure report to GitHub Pages - $(date)"
 git push --force origin gh-pages
@@ -79,5 +81,5 @@ rm -rf gh-pages
 # Done
 # -----------------------
 echo "✅ DONE! Your report is live at:"
-echo "➡ https://abhi-5177.github.io/new_CICD/index.html"
+echo "➡ https://$UserName.github.io/$Repo/index.html"
 

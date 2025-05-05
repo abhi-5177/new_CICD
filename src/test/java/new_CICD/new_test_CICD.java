@@ -22,7 +22,10 @@ public class new_test_CICD {
 	    @Test
 	    public void testGoogleSearchTitle() {
 	        driver.get("https://www.google.com");
-	        AssertJUnit.assertEquals(driver.getTitle(), "Google");  
+	        AssertJUnit.assertEquals(driver.getTitle(), "Google1");  
+	        
+	        
+	        //05052025---15:37PM
 	    }
 
 		@AfterClass
