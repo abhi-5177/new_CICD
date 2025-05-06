@@ -9,31 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">83</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">14,279</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">new_CICD.new_test_CICD</td><td><a href="#m0">setUp</a></td><td rowspan="1">1746511478144</td><td rowspan="1">-1746511478144</td></tr><tr class="failedodd"><td rowspan="1">new_CICD.test_demo</td><td><a href="#m1">setUp</a></td><td rowspan="1">1746511478211</td><td rowspan="1">-1746511478211</td></tr><tr><th colspan="4">Test &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="1">new_CICD.new_test_CICD</td><td><a href="#m2">tearDown</a></td><td rowspan="1">1746511478208</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">new_CICD.test_demo</td><td><a href="#m3">tearDown</a></td><td rowspan="1">1746511478215</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">new_CICD.new_test_CICD</td><td><a href="#m4">testGoogleSearchTitle</a></td><td rowspan="1">1746511478202</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">new_CICD.test_demo</td><td><a href="#m5">testwikiSearchLinux</a></td><td rowspan="1">1746511478213</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">new_CICD.new_test_CICD</td><td><a href="#m0">testGoogleSearchTitle</a></td><td rowspan="1">1746511860369</td><td rowspan="1">2774</td></tr><tr class="failedodd"><td rowspan="1">new_CICD.test_demo</td><td><a href="#m1">testwikiSearchLinux</a></td><td rowspan="1">1746511864636</td><td rowspan="1">8849</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">new_CICD.new_test_CICD#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeClass annotated setUp.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+<h2>Test</h2><h3 id="m0">new_CICD.new_test_CICD#testGoogleSearchTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;Google&gt; but was:&lt;Google1&gt;
+	at new_CICD.new_test_CICD.testGoogleSearchTitle(new_test_CICD.java:30)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">new_CICD.test_demo#setUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeClass annotated setUp.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">new_CICD.test_demo#testwikiSearchLinux</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected:&lt;Java | Oracle&gt; but was:&lt;Java | Oracle1&gt;
+	at new_CICD.test_demo.testwikiSearchLinux(test_demo.java:27)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">new_CICD.new_test_CICD#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">new_CICD.test_demo#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">new_CICD.new_test_CICD#testGoogleSearchTitle</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeClass annotated setUp.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">new_CICD.test_demo#testwikiSearchLinux</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.TestNGException: 
-Can inject only one of &lt;ITestContext, XmlTest&gt; into a @BeforeClass annotated setUp.
-For more information on native dependency injection please refer to https://testng.org/doc/documentation-main.html#native-dependency-injection
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
