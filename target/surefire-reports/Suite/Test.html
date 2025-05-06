@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue May 06 11:40:59 IST 2025</td>
+<td>Started on:</td><td>Tue May 06 12:03:17 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>14 seconds (14279 ms)</td>
+<tr><td>Total time:</td><td>10 seconds (10456 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -80,8 +80,8 @@ function toggleAllBoxes() {
 <td><div><pre>java.lang.AssertionError: expected:&lt;Google&gt; but was:&lt;Google1&gt;
 	at new_CICD.new_test_CICD.testGoogleSearchTitle(new_test_CICD.java:30)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1269826537", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1269826537'><pre>java.lang.AssertionError: expected:&lt;Google&gt; but was:&lt;Google1&gt;
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace42158278", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace42158278'><pre>java.lang.AssertionError: expected:&lt;Google&gt; but was:&lt;Google1&gt;
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
 	at new_CICD.new_test_CICD.testGoogleSearchTitle(new_test_CICD.java:30)
@@ -119,17 +119,16 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
 <td>2</td>
-<td>new_CICD.new_test_CICD@4f2b503c</td></tr>
+<td>new_CICD.new_test_CICD@bae7dc0</td></tr>
 <tr>
 <td title='new_CICD.test_demo.testwikiSearchLinux()'><b>testwikiSearchLinux</b><br>Test class: new_CICD.test_demo</td>
-<td><div><pre>java.lang.AssertionError: expected:&lt;Java | Oracle&gt; but was:&lt;Java | Oracle1&gt;
-	at new_CICD.test_demo.testwikiSearchLinux(test_demo.java:27)
+<td><div><pre>java.lang.AssertionError: Expected title: The123Java but found: Java | Oracle expected:&lt;Java | Oracle&gt; but was:&lt;The123Java&gt;
+	at new_CICD.test_demo.testwikiSearchLinux(test_demo.java:30)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace277697988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace277697988'><pre>java.lang.AssertionError: expected:&lt;Java | Oracle&gt; but was:&lt;Java | Oracle1&gt;
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace697463019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace697463019'><pre>java.lang.AssertionError: Expected title: The123Java but found: Java | Oracle expected:&lt;Java | Oracle&gt; but was:&lt;The123Java&gt;
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
-	at new_CICD.test_demo.testwikiSearchLinux(test_demo.java:27)
+	at new_CICD.test_demo.testwikiSearchLinux(test_demo.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -163,8 +162,22 @@ function toggleAllBoxes() {
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 </pre></div></td>
-<td>8</td>
-<td>new_CICD.test_demo@342c38f8</td></tr>
+<td>3</td>
+<td>new_CICD.test_demo@c88a337</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='new_CICD.test_demo.visit_geeksforgeeks()'><b>visit_geeksforgeeks</b><br>Test class: new_CICD.test_demo</td>
+<td></td>
+<td>1</td>
+<td>new_CICD.test_demo@c88a337</td></tr>
 </table><p>
 </body>
 </html>

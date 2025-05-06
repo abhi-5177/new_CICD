@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 14.58 s <<< FAILURE! -- in TestSuite
-new_CICD.new_test_CICD.testGoogleSearchTitle -- Time elapsed: 3.586 s <<< FAILURE!
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 10.77 s <<< FAILURE! -- in TestSuite
+new_CICD.new_test_CICD.testGoogleSearchTitle -- Time elapsed: 2.888 s <<< FAILURE!
 java.lang.AssertionError: expected:<Google> but was:<Google1>
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
@@ -40,11 +40,10 @@ java.lang.AssertionError: expected:<Google> but was:<Google1>
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 
-new_CICD.test_demo.testwikiSearchLinux -- Time elapsed: 8.936 s <<< FAILURE!
-java.lang.AssertionError: expected:<Java | Oracle> but was:<Java | Oracle1>
+new_CICD.test_demo.testwikiSearchLinux -- Time elapsed: 4.056 s <<< FAILURE!
+java.lang.AssertionError: Expected title: The123Java but found: Java | Oracle expected:<Java | Oracle> but was:<The123Java>
 	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
-	at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
-	at new_CICD.test_demo.testwikiSearchLinux(test_demo.java:27)
+	at new_CICD.test_demo.testwikiSearchLinux(test_demo.java:30)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
