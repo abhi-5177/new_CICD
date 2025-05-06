@@ -21,8 +21,8 @@ public class test_demo {
 
 	    @Test
 	    public void testwikiSearchLinux() {
-	        driver.get("https://en.wikipedia.org/wiki/Linux");
-	        AssertJUnit.assertEquals(driver.getTitle(), "Linux");  
+	        driver.get("https://www.java.com/en/");
+	        AssertJUnit.assertEquals(driver.getTitle(), "Java | Oracle");  
 	        
 	        
 	        //06052025---10:47PM
