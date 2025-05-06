@@ -16,7 +16,7 @@ public class new_test_CICD {
 	  WebDriver driver;
 
 		@BeforeClass
-	    public void setUp(Method method, ITestContext context){
+	    public void setUp(ITestContext context){
 			
 	    driver = new ChromeDriver();
 	    context.setAttribute("driver", driver);

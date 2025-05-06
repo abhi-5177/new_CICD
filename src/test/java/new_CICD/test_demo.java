@@ -13,11 +13,11 @@ public class test_demo {
 	  WebDriver driver;
 
 	  @BeforeClass
-	    public void setUp(Method method, ITestContext context){
+	    public void setUp(ITestContext context){
 			
 	    driver = new ChromeDriver();
-	    context.setAttribute("driver", driver);
 	    System.setProperty("webdriver.chrome.driver", "/usr/bin/chromedriver");
+	    context.setAttribute("driver", driver);
 
 	    }
 
