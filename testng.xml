@@ -7,5 +7,10 @@
       <class name="new_CICD.test_demo"/>
 
     </classes>
+    
   </test> <!-- Test -->
+  <listeners>
+    <listener class-name="new_CICD.AllureTestListener"/>
+</listeners>
+
 </suite> <!-- Suite -->
